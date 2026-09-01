@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scientific Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="calculator">
+    <div class="display">
+      <div class="display-expression" id="expression">&nbsp;</div>
+      <div class="display-result" id="result">0</div>
+    </div>
+
+    <div class="keys">
+      <button class="key key--util" data-toggle="second" id="secondBtn">2nd</button>
+      <button class="key key--util" data-toggle="mode" id="modeBtn">DEG</button>
+      <button class="key key--util" data-paren="(">(</button>
+      <button class="key key--util" data-paren=")">)</button>
+
+      <button class="key key--sci" data-func="sin" id="sinBtn">sin</button>
+      <button class="key key--sci" data-func="cos" id="cosBtn">cos</button>
+      <button class="key key--sci" data-func="tan" id="tanBtn">tan</button>
+      <button class="key key--op" data-op="^">^</button>
+
+      <button class="key key--sci" data-func="ln">ln</button>
+      <button class="key key--sci" data-func="log">log</button>
+      <button class="key key--sci" data-func="sqrt">√</button>
+      <button class="key key--sci" data-postfix="fact">x!</button>
+
+      <button class="key key--sci" data-const="pi">π</button>
+      <button class="key key--sci" data-const="e">e</button>
+      <button class="key key--sci" data-postfix="inv">1/x</button>
+      <button class="key key--sci" data-postfix="sq">x²</button>
+
+      <button class="key key--util" data-mem="mc">MC</button>
+      <button class="key key--util" data-mem="mr">MR</button>
+      <button class="key key--util" data-mem="mplus">M+</button>
+      <button class="key key--util" data-mem="mminus">M−</button>
+
+      <button class="key key--util" data-action="clear">C</button>
+      <button class="key key--util" data-action="backspace">⌫</button>
+      <button class="key key--postfix" data-postfix="pct">%</button>
+      <button class="key key--op" data-op="/">÷</button>
+
+      <button class="key" data-num="7">7</button>
+      <button class="key" data-num="8">8</button>
+      <button class="key" data-num="9">9</button>
+      <button class="key key--op" data-op="*">×</button>
+
+      <button class="key" data-num="4">4</button>
+      <button class="key" data-num="5">5</button>
+      <button class="key" data-num="6">6</button>
+      <button class="key key--op" data-op="-">−</button>
+
+      <button class="key" data-num="1">1</button>
+      <button class="key" data-num="2">2</button>
+      <button class="key" data-num="3">3</button>
+      <button class="key key--op" data-op="+">+</button>
+
+      <button class="key key--wide" data-num="0">0</button>
+      <button class="key" data-action="decimal">.</button>
+      <button class="key key--equals" data-action="equals">=</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
